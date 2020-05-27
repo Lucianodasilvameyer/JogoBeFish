@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum TipoObstaculo
-{
-	TUBARAO, ISCA, REDE, Alga, Tesouro
-};
+//public enum TipoObstaculo
+//{
+	//TUBARAO, ISCA, REDE, Alga, Tesouro
+//};
 
 public class Obstaculo : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class Obstaculo : MonoBehaviour
 
     public bool contarTempo = false;
 
-    public TipoObstaculo tipo { get; protected set; }
+    //public TipoObstaculo tipo { get; protected set; }
 
 	/*private void OnTriggerEnter2D(Collider2D collision)
 	{

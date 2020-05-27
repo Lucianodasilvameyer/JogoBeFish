@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class SpawnInimigo : MonoBehaviour
 {
+    
     public Transform LinhaDeSpawn;
 
     public bool contarTempo = false;
@@ -20,7 +21,7 @@ public class SpawnInimigo : MonoBehaviour
     public GameObject[] objetosObstaculosRede;
     public GameObject[] objetoObstaculoTubarao;
 
-    public GameObject[] arrayObstaculo;
+    
 
     public void Start()
     {

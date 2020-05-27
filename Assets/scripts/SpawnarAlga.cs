@@ -7,6 +7,11 @@ using System.Linq;
 
 public class SpawnarAlga : MonoBehaviour
 {
+
+    /*exemplo para singleton:
+    public static SpawnarAlga singleton;
+    public SpawnInimigo spawnInimigo_ref;*/
+
     public Transform LinhaSpawnAlga;
 
     public GameObject algaPrefab;
@@ -33,6 +38,22 @@ public class SpawnarAlga : MonoBehaviour
             StartCoroutine("ReposicionarAlga");
         }
     }
+    private void Awake()
+    {
+        /*exemplo para singleton
+        if(singleton != this && singleton != null)
+        {
+            GameObject.Destroy(this);
+        }
+        else
+        {
+            singleton = this;
+        }
+
+        spawnInimigo_ref = GetComponent<SpawnInimigo>();
+        */
+    }
+
     public GameObject GetFromAlga()
     {
         GameObject obstaculoAlga = null;

@@ -14,8 +14,8 @@ public class SpawnarGhost : MonoBehaviour
 
     public GameObject ghostPrefab;
 
-    [SerializeField]
-    GhostPiranha spectre;
+    //[SerializeField]
+    //GhostPiranha spectre;
 
     List<GameObject> ListGhost = new List<GameObject>();
 
@@ -410,7 +410,7 @@ public class SpawnarGhost : MonoBehaviour
 
 
 
-        for (int i=0; i < QuantidadeFantasmas; i++)
+       /*for (int i=0; i < QuantidadeFantasmas; i++)
         {
             if (ListGhost.Count > 0)
             {
@@ -431,7 +431,7 @@ public class SpawnarGhost : MonoBehaviour
             {
                 GhostPiranha GameObject = Instantiate(ghostPrefab, Position, Quaternion.identity).GetComponent<GhostPiranha>();
             }
-        } 
+        }*/ 
     }
     
     

@@ -55,6 +55,8 @@ public class SpawnarTesouro : MonoBehaviour
     {
         tesouro.transform.position = PosicaoTesouro(minimo, maximo);
         tesouro.SetActive(true);
+
+       
     }
 
 

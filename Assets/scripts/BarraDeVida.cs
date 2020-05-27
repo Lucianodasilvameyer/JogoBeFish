@@ -6,6 +6,8 @@ using System;
 
 public class BarraDeVida : MonoBehaviour
 {
+   
+
     LevelManager levelManager_ref;
 
     public event Action OnPlayerDeath;
@@ -75,5 +77,7 @@ public class BarraDeVida : MonoBehaviour
     private void Awake()
     {
         levelManager_ref = GameObject.Find("LevelManagement").GetComponent<LevelManager>();
+
+        
     }
 }

@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab4f80af05228e48b7ef2601e5dd5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 3190337252905631514, guid: d205922ac8186e949b55a25e460cea41, type: 3}
   boundX: 10000
   boundY: 3.85
   speed: 3

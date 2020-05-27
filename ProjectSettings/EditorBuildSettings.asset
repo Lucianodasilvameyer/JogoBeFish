@@ -5,24 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes certas/Menu.unity
     guid: 7124fdfc871de644d82d3b0669ef1035
   - enabled: 1
     path: Assets/Scenes certas/JogandoComPiranha.unity
     guid: be7dc3b63dda7574eb7d19b7bb7c68a2
-  - enabled: 1
-    path: Assets/Scenes certas/JogandoComCascudo.unity
-    guid: a1c342d051e6e3a4ea211a08e33e3b3a
-  - enabled: 1
-    path: Assets/Scenes certas/JogarComTraira 1.unity
-    guid: 84a7e40dfaa40854b8f8fe882cba1e44
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes certas/GameOver.unity
     guid: 213cc1e984c9d2749beee8ab21091321

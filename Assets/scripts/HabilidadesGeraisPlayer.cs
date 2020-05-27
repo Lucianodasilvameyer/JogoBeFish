@@ -8,7 +8,7 @@ public class HabilidadesGeraisPlayer : MonoBehaviour
     Rigidbody2D rigidbody2D_;
     public int speed;
 
-    //public SpawnarGhost spawnarGhost_ref;
+   
 
 
 
@@ -19,7 +19,6 @@ public class HabilidadesGeraisPlayer : MonoBehaviour
         barraDeVida_ref = GameObject.Find("Game").GetComponent<BarraDeVida>();
         animator = GetComponent<Animator>();
         rigidbody2D_ = GetComponent<Rigidbody2D>();
-        //spawnarGhost_ref = GetComponent<SpawnarGhost>();
     }
     void Start()
     {

@@ -13,8 +13,8 @@ public class HabilidadesGeraisInimigo : MonoBehaviour
    
     HabilidadesGeraisPlayer habilidadesGeraisPlayer_ref;
 
-    public Piranha piranha;
-    public Cascudo cascudo;
+    public GameObject piranha;
+    public GameObject cascudo;
     
 
     public int strength; 
@@ -27,30 +27,8 @@ public class HabilidadesGeraisInimigo : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-
-        //if (piranha.gameObject.activeInHierarchy==true)
-        //{
-            habilidadesGeraisPlayer_ref = GameObject.Find("Piranha").GetComponent<HabilidadesGeraisPlayer>();
-        //}
-
-        
-        
-            
-        
-        //{
-            //habilidadesGeraisPlayer_ref = GameObject.Find("Piranha").GetComponent<HabilidadesGeraisPlayer>();
-        //}
-        //if (cascudo.gameObject.activeInHierarchy == true)
-        //{
-            //habilidadesGeraisPlayer_ref = GameObject.Find("Cascudo").GetComponent<HabilidadesGeraisPlayer>();
-        //}
-    
-
-        
-
-        
-        
-        
+        VerificarPlayer();
+        //habilidadesGeraisPlayer_ref = GameObject.Find("Piranha").GetComponent<HabilidadesGeraisPlayer>();
     }
 
     // Update is called once per frame
@@ -67,14 +45,23 @@ public class HabilidadesGeraisInimigo : MonoBehaviour
     
 
 
-    public void CausarDano(Player alvo)
+    public void CausarDano(Player player)
     {
-        habilidadesGeraisPlayer_ref.TomarDano(strength);
-        
-
-
+       habilidadesGeraisPlayer_ref.TomarDano(strength);
     }
-   
+
+    public void VerificarPlayer()
+    {
+        if (piranha.activeInHierarchy == true)
+        {
+            habilidadesGeraisPlayer_ref = GameObject.Find("Piranha").GetComponent<HabilidadesGeraisPlayer>();
+        }
+        if (cascudo.activeInHierarchy == true)
+        {
+            habilidadesGeraisPlayer_ref = GameObject.Find("Cascudo").GetComponent<HabilidadesGeraisPlayer>();
+        }
+    }
+
     /*public void SomPlay(AudioClip Som)
     {
         audioSource.clip = Som;

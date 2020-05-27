@@ -12,7 +12,7 @@ public class Alga : Obstaculo
     {
         spawnarAlga_ref = GameObject.Find("Game").GetComponent<SpawnarAlga>();
 
-        tipo = TipoObstaculo.Alga;
+        //tipo = TipoObstaculo.Alga;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

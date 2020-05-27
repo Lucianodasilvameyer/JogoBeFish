@@ -28,7 +28,7 @@ public class Tesouro : Obstaculo
     private void Awake()
     {
 
-        tipo = TipoObstaculo.Tesouro;
+        //tipo = TipoObstaculo.Tesouro;
         spawnarTesouro_ref = GameObject.Find("Game").GetComponent<SpawnarTesouro>();
         tesouroScore_ref = GameObject.Find("TesouroScore").GetComponent<TesouroScore>();
     }

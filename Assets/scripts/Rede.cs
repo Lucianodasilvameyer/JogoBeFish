@@ -8,7 +8,7 @@ public class Rede : Obstaculo
     {
         spawnInimigo = GameObject.Find("Game").GetComponent<SpawnInimigo>();
 
-        tipo = TipoObstaculo.REDE;
+        //tipo = TipoObstaculo.REDE;
     }
    
 
@@ -16,7 +16,7 @@ public class Rede : Obstaculo
     {
         if (collision.gameObject.CompareTag("ColisorDeTras"))
         {
-            Debug.Log("RedeAcerta");
+            //Debug.Log("RedeAcerta");
 
 
             spawnInimigo.Reutilizacao3(1.0f, 4.0f, 14.0f);

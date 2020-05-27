@@ -12,17 +12,17 @@ public class AtacandoPeixes : MonoBehaviour
 
     CascudoArmadura cascudoArmadura_ref;
 
-    public Cascudo cascudo;
+    public GameObject cascudo;
 
     // Start is called before the first frame update
     void Awake()
     {
         habilidadesGeraisInimigo_ref = GetComponent<HabilidadesGeraisInimigo>();
 
-        if (cascudo.gameObject.activeInHierarchy == true)
-        {
-            cascudoArmadura_ref = GameObject.Find("Cascudo").GetComponent<CascudoArmadura>();
-        }
+          if (cascudo.activeInHierarchy == true)
+          {
+              cascudoArmadura_ref = GameObject.Find("Cascudo").GetComponent<CascudoArmadura>();
+          }
 
 
         
@@ -38,8 +38,9 @@ public class AtacandoPeixes : MonoBehaviour
         if (collision.gameObject.CompareTag("Piranha"))
         {
             habilidadesGeraisInimigo_ref.CausarDano(collision.GetComponent<Player>());
+            Debug.Log("acertou");
         }
-        if (collision.gameObject.CompareTag("Cascudo"))
+        else if (collision.gameObject.CompareTag("Cascudo"))
         {
             if (cascudoArmadura_ref.armadura == true && cascudoArmadura_ref.intervaloDeColisao == false)
             {
