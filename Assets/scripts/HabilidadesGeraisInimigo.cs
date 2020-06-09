@@ -12,9 +12,8 @@ public class HabilidadesGeraisInimigo : MonoBehaviour
 
    
     HabilidadesGeraisPlayer habilidadesGeraisPlayer_ref;
-
-    public GameObject piranha;
-    public GameObject cascudo;
+    
+   
     
 
     public int strength; 
@@ -27,8 +26,7 @@ public class HabilidadesGeraisInimigo : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        VerificarPlayer();
-        //habilidadesGeraisPlayer_ref = GameObject.Find("Piranha").GetComponent<HabilidadesGeraisPlayer>();
+        
     }
 
     // Update is called once per frame
@@ -42,25 +40,34 @@ public class HabilidadesGeraisInimigo : MonoBehaviour
         
     }
 
-    
-
-
     public void CausarDano(Player player)
     {
-       habilidadesGeraisPlayer_ref.TomarDano(strength);
+        habilidadesGeraisPlayer_ref.TomarDano(strength);
     }
 
-    public void VerificarPlayer()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (piranha.activeInHierarchy == true)
+        if (collision.gameObject.CompareTag("Piranha"))
         {
-            habilidadesGeraisPlayer_ref = GameObject.Find("Piranha").GetComponent<HabilidadesGeraisPlayer>();
+            var ColisaoComPiranha = GameObject.Find("Piranha").GetComponent<HabilidadesGeraisPlayer>();
+
+            if(ColisaoComPiranha != null)
+            {
+                habilidadesGeraisPlayer_ref = ColisaoComPiranha;
+            }
         }
-        if (cascudo.activeInHierarchy == true)
+        else if (collision.gameObject.CompareTag("Cascudo"))
         {
-            habilidadesGeraisPlayer_ref = GameObject.Find("Cascudo").GetComponent<HabilidadesGeraisPlayer>();
+            var ColisaoComCascudo = GameObject.Find("Cascudo").GetComponent<HabilidadesGeraisPlayer>();
+
+            if(ColisaoComCascudo != null)
+            {
+                habilidadesGeraisPlayer_ref = ColisaoComCascudo;
+            }
         }
     }
+
+   
 
     /*public void SomPlay(AudioClip Som)
     {

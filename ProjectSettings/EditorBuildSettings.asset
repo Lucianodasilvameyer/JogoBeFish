@@ -9,8 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes certas/Menu.unity
     guid: 7124fdfc871de644d82d3b0669ef1035
   - enabled: 1
+    path: Assets/Scenes certas/Credits.unity
+    guid: cec21bb3f76cdcc41bc81863b6c90d20
+  - enabled: 1
+    path: "Assets/Scenes certas/Gloss\xE1rio.unity"
+    guid: 34b4d8fdf4e76b24d95ce932b40e5dab
+  - enabled: 1
+    path: Assets/Scenes certas/TelaSelecaoPlayer.unity
+    guid: 82add6d9a359b904db2d2576a8b660a9
+  - enabled: 1
     path: Assets/Scenes certas/JogandoComPiranha.unity
     guid: be7dc3b63dda7574eb7d19b7bb7c68a2
+  - enabled: 1
+    path: Assets/Scenes certas/JogandoComCascudo.unity
+    guid: a1c342d051e6e3a4ea211a08e33e3b3a
   - enabled: 1
     path: Assets/Scenes certas/GameOver.unity
     guid: 213cc1e984c9d2749beee8ab21091321

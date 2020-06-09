@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 437689308}
   - component: {fileID: 437689307}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ContadorDeMinhocas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4876,7 +4876,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4245811031457795852, guid: 8a4962b395e8754468330ec4737bec81,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7193289
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245811031457795852, guid: 8a4962b395e8754468330ec4737bec81,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7193289
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245811031457795852, guid: 8a4962b395e8754468330ec4737bec81,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7193289
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5689566536529045920, guid: 8a4962b395e8754468330ec4737bec81, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a4962b395e8754468330ec4737bec81, type: 3}
 --- !u!1001 &8869712003825099618
 PrefabInstance:
